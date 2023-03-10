@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Pacifico&display=swap');
+:root {
+    --pink: #AC7088;
+    --dark: #262020;
+    --yellow: #F5E8C7;
+    --peach: #ECCCB2;
+    --white: #FFF;
+    --gray: rgb(118, 118, 118);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Caveat', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.background-image {
+    background-image: url("./img/13.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner {
+    padding: 545px 0 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.logo {
+    font-family: 'Caveat', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.nav a,
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav a:hover,
+footer a:hover {
+    color: var(--dark)
+}
+
+.nav input:focus {
+    outline-color: var(--peach);
+    outline-style: solid;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.site-search {
+    display: flex;
+}
+
+.site-search input {
+    border: 1px solid var(--gray);
+    border-radius: 15px 0 0 15px;
+    font-size: 25px;
+}
+
+.site-search button {
+    background: var(--peach);
+    border: 1px solid var(--gray);
+    -webkit-text-stroke: 1px var(--peach);
+    border-radius: 0 15px 15px 0;
+    border-left: 0;
+}
+
+#shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.shop-item {
+    width: calc(25% - 17px);
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid;
+}
+
+.shop-item .content {
+    padding: 10px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.shop-item img {
+    width: 100%;
+    height: 290px;
+    flex-shrink: 3;
+    object-fit: cover;
+}
+
+.shop-item h1 {
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.shop-item p {
+    font-size: 23px;
+}
+
+.shop-item .price {
+    background-color: var(--peach);
+    padding: 4px 8px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-top: auto;
+}
+
+.shop-item .footer {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-item .rating {
+    cursor: pointer;
+    color: var(--dark);
+}
+
+.shop-item .tags {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.shop-item .tag {
+    background: var(--yellow);
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #e7e7e7;
+}
+
+#nothing-found {
+    color: var(--dark);
+    position: absolute;
+    white-space: nowrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+label,
+#sort {
+    font-size: 23px;
+}
+
+ul a {
+    font-size: 28px;
+}
+
+footer .logo {
+    font-size: 30px;
+}
+
+.networks i {
+    font-size: 1.75rem;
+}
+
+.networks a {
+    display: inline-block;
+    color: black;
+    padding-top: 20px;
+}
+
+.networks a:not(:last-of-type) {
+    margin-right: 30px;
+}
